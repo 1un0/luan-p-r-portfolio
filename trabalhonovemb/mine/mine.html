@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário</title>
+</head>
+<link rel="stylesheet" href="ui.css">
+
+
+<body>
+    <div>
+        <div class="menu"> 
+            <div class="item">
+                <img id="drag1" src="Wooden_Pickaxe_JE3_BE3.webp" draggable="true" ondragstart="drag(event)" width="44" height="44">
+                <img id="drag2" src="Picareta de Pedra.webp" draggable="true" ondragstart="drag(event)" width="44" height="44">
+
+            </div>
+        </div>
+       
+        <div> <!--Position-->
+            <div class="cr1">
+                <!--Crafting-->
+                <div class="c8">
+                    <div class="w1"></div>
+                    <div class="w1"></div>
+                </div>
+                <div class="c9">
+                    <div class="w2"></div>
+                    <div class="w2"></div>
+                </div>
+                <!------------------------------------->
+                <div class="s1">
+                    <img class="steve" src="Steve_Eye_blink_BE.webp" alt="" height="180px">
+                </div><!--Steve-->
+                <div class="a2"></div><!--Escudo-->
+                <div class="r1"></div><!--Resultado C-->
+                <!--Seta-->
+                <div class="s2"></div>
+                <div class="s3"></div>
+                <h1 class="h">Crafting</h1>
+            </div>
+
+        </div>
+        <div class="bd"> <!--Flex-->
+            <div class="bc" ondrop="drop(event)" ondragover="allowDrop(event)" > <!--Inventário-->
+                
+                <div class="c5" > <!--Armadura-->
+                    <div class="a1"></div>
+                    <div class="a1"></div>
+                    <div class="a1"></div>
+                    <div class="a1"></div>
+                </div>
+                <div class="c1"> <!--Row4-->
+                    <div class="q1"></div>
+                    <div class="q1"></div>
+                    <div class="q1"></div>
+                    <div class="q1"></div>
+                    <div class="q1"></div>
+                    <div class="q1"></div>
+                    <div class="q1"></div>
+                    <div class="q1"></div>
+                    <div class="q1"></div>
+                </div>
+                <div class="c2"> <!--Row3-->
+                    <div class="q2"></div>
+                    <div class="q2"></div>
+                    <div class="q2"></div>
+                    <div class="q2"></div>
+                    <div class="q2"></div>
+                    <div class="q2"></div>
+                    <div class="q2"></div>
+                    <div class="q2"></div>
+                    <div class="q2"></div>
+                </div>
+                <div class="c3"> <!--Row2-->
+                    <div class="q3"></div>
+                    <div class="q3"></div>
+                    <div class="q3"></div>
+                    <div class="q3"></div>
+                    <div class="q3"></div>
+                    <div class="q3"></div>
+                    <div class="q3"></div>
+                    <div class="q3"></div>
+                    <div class="q3"></div>
+                </div>
+                <div class="c4"> <!--Row1-->
+                    <div class="q4"></div>
+                    <div class="q4"></div>
+                    <div class="q4"></div>
+                    <div class="q4"></div>
+                    <div class="q4"></div>
+                    <div class="q4"></div>
+                    <div class="q4"></div>
+                    <div class="q4"></div>
+                    <div class="q4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function allowDrop(ev) {
+  ev.preventDefault();
+}
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+</script>
+</html>

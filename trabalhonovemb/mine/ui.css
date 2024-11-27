@@ -1,0 +1,127 @@
+@font-face {
+    font-family: Minecraft3;
+    src: url(MinecraftRegular-Bmg3.otf);
+}
+
+body {background-color: rgb(44, 44, 44);}
+
+.q1, .q2, .q3, .q4, .a1, .w1, .w2, .a2, .s1, .r1 { /*inv*/
+    width: 45px; height: 45px;
+    background-color: rgb(141,141,141);
+    border: 3px solid rgb(66, 66, 66);
+    border-bottom-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+}
+.c1, .c2, .c4, .c3, .c5 { /*inv row4*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c3 { /*inv row2*/
+    margin-bottom: 12px;
+}
+.c5 { /*arm col1*/
+    display: flex; flex-direction: column;
+    align-items: end;
+    margin-bottom: 12px;
+    margin-right: 403px;
+}
+.c8 { /*crafting 1*/
+    position: absolute;
+    left: 283px;
+    top: 54px;
+}
+.c9 { /*crafting 2*/
+    position: absolute;
+    left: 334px;
+    top: 54px;
+}
+.r1 { /*r crafting 3*/
+    position: absolute;
+    left: 435px;
+    top: 81px; 
+}
+/*----------------------------------------------------------*/
+.s2 { /*seta*/
+    position: absolute;
+    left: 414px;
+    top: 87px; 
+    width: 0px; height: 0px;
+    border-left: 19px solid rgb(141,141,141);
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 19px solid transparent;
+}
+.s3 { /*seta*/
+    position: absolute;
+    left: 390px;
+    top: 101px; 
+    width: 0px; height: 0px;
+    border-left: 15px solid rgb(141,141,141);
+    border-top: 9px solid rgb(141,141,141);
+    border-right: 15px solid rgb(141,141,141);
+}
+/*----------------------------------------------------------*/
+.s1 { /*steve*/
+    width: 138px; height: 197px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 29px;
+    left: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a2 { /*escudo*/
+    position: absolute;
+    top: 181px;
+    left: 226px;
+}
+/*----------------------------------------------------------*/
+.bd { /*borda fundo*/
+    display: flex; flex-direction: row;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0);
+    width: 494px; height: 465px;
+    border-radius: 3%;
+}
+.bc { /*fundo*/
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%; 
+    border: 6px solid rgb(94, 94, 94);
+    background-color: rgb(204, 204, 204);
+    border-top-color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255);
+    width: 480px; height: 452px;
+}
+/*----------------------------------------------------------*/
+.h { /*fonte*/
+    position: absolute;
+    font-family: Minecraft3;
+    color: rgb(78, 78, 78);
+    font-size: 29px;
+    left: 281px;
+    top: 0px;
+    font-weight: 1;
+}
+
+.menu {
+    position: absolute;
+    left: 540px;
+    top: 10px;
+    display: flex; flex-direction: column;
+    justify-items: first baseline; align-items: start;
+    border-radius: 2%; 
+    border: 6px solid rgb(94, 94, 94);
+    background-color: rgb(204, 204, 204);
+    border-top-color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255);
+    height: 400px; width: 400px;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
