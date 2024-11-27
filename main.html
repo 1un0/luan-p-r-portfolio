@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="icon" type="image/x=icon" href="Icon/desk.png">
+</head>
+
+<!--Css e Fonte-->
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <header> <!--Cabeçalho-->
+        <div>
+            <div><h1 class="t1">Luan Pazinato Rockembach</h1></div>
+        </div>
+    </header>
+    <header class="he"> <!--Barra de Navegação-->
+        <div class="barra">
+            <ul id="Nav">
+                <li class="b1"><a href="#Sobre" class="bloco">Sobre</a></li>
+                <li class="b1"><a href="#Formação" class="bloco">Formação</a></li>
+                <li class="b1"><a href="#Portfólio" class="bloco">Portfólio</a></li>
+                <li class="b1"><a href="#Contato" class="bloco">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>   <!--Informações-->
+    <section id="Sobre"><!--Sobre-->
+        <div class="sfpc">
+            <h1 class="titulo">Sobre</h1>
+            <p> 
+                Prazer, meu nome é Luan, tenho 18 anos, moro no Rio Grande do Sul e esse é o meu portfólio. <br><br> 
+                No meu tempo livre eu jogo, leio, pinto, desenho e principalmente escuto música.<br><br>
+                Atualmente estou cursando Analise e Desenvolvimento de Sistemas (ADS) pela Uninter e estudando python por fora.
+            </p>
+        </div>
+    </section>
+    <section id="Formação"><!--Formação-->
+        <div class="sfpc">
+            <h1 class="titulo">Formação</h1>
+            <div id="fundo-formação">
+                <div class="div-ads">
+                    <h2 class="u-formação">Analise e Desenvolvimento de Sistemas (ADS) -- UNInter</h2>
+                    <p><small>Cursando desde Maio de 2024 </small></p>
+                </div>
+                <div class="div-idiomas"> 
+                    <h2 class="u-formação">Idiomas</h2>
+                    <p><b>Português</b>: Fluente - Nativo</p>
+                    <p><b>Inglês</b>: C1 - Fluente</p>
+                    <p><b>Russo</b>: Iniciante</p>
+                    <p><b>Espanhol</b>: Básico</p>
+                </div>
+                <div class="div-ens">
+                    <h2 class="u-formação">Ensino Médio Completo</h2>    
+                    <p><small>Inicio: Março 2021 - Fim:  Dezembro 2023</small></p>
+                </div>
+            </div>
+        </div>
+      </section>
+    <section id="Portfólio"><!--Portfólio-->
+        <div class="sfpc">
+            <h1 class="titulo">Portfólio</h1>
+            <h2 class="u-portfólio">Programação</h2>
+            <div class="fundo-portfólio">
+                <div class="div-mine">
+                    <h2 class="u-portfólio">Inventário <br>HTML-CSS</h2>
+                    <a target="_blank" href="mine/mine.html">
+                        <img src="Icon/mine.png" alt="Inventário Minecraft" height="150" class="img-mine">
+                    </a>
+                </div>
+            </div>
+            <h2 class="u-portfólio">Artes</h2>
+            <div class="artes">
+                <div>
+                    <a href="https://www.artstation.com/artwork/xDQoQE" target="_blank">
+                        <img src="https://cdna.artstation.com/p/assets/images/images/073/183/458/large/lun-gadrel3.jpg?1709090145" alt="desenho gadrel" height="440px" class="arte">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.artstation.com/artwork/Rnl3km" target="_blank">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/047/824/831/large/lun-demonio.jpg?1648540712" alt="demonio azul" height="350px" class="arte">
+                    </a>
+                </div>
+                                <div>
+                    <a href="https://www.artstation.com/artwork/yJ6k1O" target="_blank">
+                        <img src="https://cdna.artstation.com/p/assets/images/images/047/824/592/large/lun-bebemtevi.jpg?1648540273" alt="bem-te-vi" height="350px" class="arte">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/p/DBhAPnPp8C4/" target="_blank" >
+                        <img src="Icon/Heldal.png" alt="Hel'dal" height="400px" class="arte">
+                    </a>
+                </div>
+            </div>
+            <p>Artstation: <a href="https://www.artstation.com/olun" target="_blank" class="o-lun">O Lun</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/o.luan_/profilecard/?igsh=MXRmYW82anNmN3RzbA==" target="_blank" class="o-lun">o.luan_</a></p>
+        </div>
+    </section>
+    <section id="Contato"><!--Contato-->
+        <div class="sfpc">
+            <h1 class="titulo">Contato</h1>
+            <form method="post" action="script.jsp">
+                <p>Entre em Contato e vamos fazer um projeto!</p>
+                Nome: <input type="text" name="nome"> <br><br>
+                E-Mail: <input type="email" name="email"> <br><br>
+                Assunto: 
+                <br><textarea name="mensagem" rows="10" cols="30"></textarea>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </section>
+    </main>
+</body>
+</html>
